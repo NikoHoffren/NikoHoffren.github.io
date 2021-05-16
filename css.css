@@ -1,0 +1,461 @@
+@charset "UTF-8";
+
+/* Reset */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, a{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+a{
+    text-decoration: none;
+}
+
+html{
+    background-image: url(NHbackground.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body{
+    color:blanchedalmond;
+}
+
+.buttonContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    justify-content: center;
+    position:fixed;
+    padding-left:120px;
+
+}
+.buttonContainer div{
+    height:40px;
+    width:190px;
+    text-align: center;
+    font-size:25px;
+    margin:6px;
+}   
+
+#buttonHome{
+    background-color:rgb(34, 34, 32); 
+    color:mistyrose;
+    font-size: 35px;
+    
+    
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#buttonHome:hover{
+    background-color: rgb(80, 80, 80);
+}
+
+#buttonBio{
+    background-color:rgb(34, 34, 32); 
+    color:mistyrose;
+    font-size: 35px;
+    
+    
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+#buttonBio:active{
+    background-color: rgb(54, 53, 54);
+}
+#buttonBio:hover{
+    background-color: rgb(80, 80, 80);
+}
+
+#buttonMusic{
+    background-color:rgb(34, 34, 32); 
+    color:mistyrose;
+    font-size: 35px;
+    
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+#buttonMusic:active{
+    background-color: rgb(54, 53, 54);
+}
+#buttonMusic:hover{
+    background-color: rgb(80, 80, 80);
+}
+
+#buttonVideos{
+    background-color:rgb(34, 34, 32); 
+    color:mistyrose;
+    font-size: 35px;
+    
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+#buttonVideos:active{
+    background-color: rgb(54, 53, 54);
+}
+#buttonVideos:hover{
+    background-color: rgb(80, 80, 80);
+}
+
+#buttonContact{
+    background-color:rgb(34, 34, 32); 
+    color:mistyrose;
+    font-size: 35px;
+    
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+#buttonContact:active{
+    background-color: rgb(54, 53, 54);
+}
+#buttonContact:hover{
+    background-color: rgb(80, 80, 80);
+}
+
+/*#NHlogo{
+    position:static;
+    width: 28%;
+    top:89px;
+    right:36%
+    
+}*/
+
+#subscribe{
+    text-align: right;
+    font-family: monospace, sans-serif;
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+#email{
+    font-size: 22px;
+    
+}
+
+@keyframes colorAnimation1{
+    0%{background-color:black;}
+    50%{background-color:rgb(43, 40, 40);}
+    100%{background-color:black;}
+}
+
+#title{
+    font-family: monospace, sans-serif;
+    font-size: 68px;
+    text-align: center;
+    border: solid;
+    width: auto;
+    padding: 23px;
+    background-color: rgb(43, 40, 40);
+    color: blanchedalmond;
+    border-color: rgb(245, 241, 241);
+    text-shadow: 0px 0px 5px rgb(0, 0, 0), 0px -5px 5px rgb(185, 185, 173);
+    animation: colorAnimation1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#biographyTitle{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    border: solid; 
+    background-color: rgb(14, 13, 13);
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+
+#NHphoto{
+    float:left;
+    margin:5px;
+}
+
+#biography{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    text-align: center;
+    border: solid; 
+    background-color: rgb(43, 40, 40);
+    padding: 10px;
+
+}
+
+#musicTitle{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    border: solid; 
+    background-color: rgb(14, 13, 13);
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+
+#videosTitle{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    border: solid; 
+    background-color: rgb(14, 13, 13);
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+
+#WITCtext{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    border: solid; 
+    background: linear-gradient(rgb(109, 109, 109),black);
+    padding: 50px;
+}
+#WITCimage{
+    float:left;
+    margin:5px;
+}
+#WITCfanlink{
+    color: red;
+    font-family: Verdana, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    text-emphasis-color: red;
+}
+#WITCfanlink:hover{
+    color: rgb(251, 255, 4);
+}
+
+#DStext{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    border: solid; 
+    background: linear-gradient(rgb(109, 109, 109),black);
+    padding: 50px;
+}
+#DSimage{
+    float:left;
+    margin:5px;
+}
+#DSfanlink{
+    color: red;
+    font-family: Verdana, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    text-emphasis-color: red;
+}
+#DSfanlink:hover{
+    color: rgb(251, 255, 4);
+}
+
+#STtext{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    border: solid; 
+    background: linear-gradient(rgb(109, 109, 109),black);
+    padding: 50px;
+}
+#STimage{
+    float:left;
+    margin:5px;
+}
+#STfanlink{
+    color: red;
+    font-family: Verdana, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    text-emphasis-color: red;
+}
+#STfanlink:hover{
+    color: rgb(251, 255, 4);
+}
+
+#Ntext{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    border: solid; 
+    background: linear-gradient(rgb(109, 109, 109),black);
+    padding: 50px;
+}
+#Nimage{
+    float:left;
+    margin:5px;
+}
+#Nfanlink{
+    color: red;
+    font-family: Verdana, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    text-emphasis-color: red;
+}
+#Nfanlink:hover{
+    color: rgb(251, 255, 4);
+}
+
+#TOEtext{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    border: solid; 
+    background: linear-gradient(rgb(109, 109, 109),black);
+    padding: 50px;
+}
+#TOEimage{
+    float:left;
+    margin:5px;
+}
+#TOEfanlink{
+    color: red;
+    font-family: Verdana, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    text-emphasis-color: red;
+}
+#TOEfanlink:hover{
+    color: rgb(251, 255, 4);
+}
+
+
+.videoImages{
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    align-items: center;
+}
+.videoImages div{
+    height:180px;
+    width:320px;
+    border:solid;
+    margin:20px;
+}
+.WITCvideo:hover{
+    border:outset;
+}
+.TOEvideo:hover{
+    border:outset;
+}
+.MCvideo:hover{
+    border:outset;
+}
+.RDvideo:hover{
+    border:outset;
+}
+.STvideo:hover{
+    border:outset;
+}
+.Mysteryvideo:hover{
+    border:outset;
+}
+.BMEvideo:hover{
+    border:outset;
+}
+.Morceauvideo:hover{
+    border:outset;
+}
+.SDvideo:hover{
+    border:outset;
+}
+
+/*#WITCpromoVideo{
+    float: left;
+    width: 18%;
+    padding-left: 90px;
+    padding-top: 15px;
+}
+
+#latestRelease{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    text-shadow: 0px 0px 5px rgb(15, 15, 15), 0px -5px 5px rgb(255, 251, 0);
+    border-radius: 5%;
+    width: 200px;
+    position: static;
+    padding-left: 125px;
+}
+*/
+
+.iconContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    justify-content: center;
+}
+
+.iconContainer div{
+    padding-top: 70px;
+    color:white;
+    height:100px;
+    width:100px;
+    text-align:center;
+    line-height:100px;
+    font-size:9px;
+    margin:1px;
+}
+
+.fa-youtube{
+    color:rgb(255, 255, 255);
+    
+}
+.fa-youtube:hover{
+    color:rgb(167, 167, 167);
+}
+
+.fa-twitter{
+    color:rgb(255, 255, 255);
+    
+}
+.fa-twitter:hover{
+    color:rgb(167, 167, 167);
+}
+
+.fa-facebook{
+    color:rgb(255, 255, 255);
+    
+}
+.fa-facebook:hover{
+    color:rgb(167, 167, 167);
+}
+
+.fa-instagram{
+    color:rgb(255, 255, 255);
+    
+}
+.fa-instagram:hover{
+    color:rgb(167, 167, 167);
+}
+
+.fa-envelope{
+    color:rgb(255, 255, 255);
+    
+}
+.fa-envelope:hover{
+    color:rgb(167, 167, 167);
+}
+
+.fa-soundcloud{
+    color:rgb(255, 255, 255);
+   
+}
+.fa-soundcloud:hover{
+    color:rgb(167, 167, 167);
+}
+
+.fa-spotify{
+    color: rgb(255, 255, 255);
+    
+}
+.fa-spotify:hover{
+    color:rgb(167, 167, 167);
+}
+
+#footerEndTag{
+    text-align: center;
+}
+
+
