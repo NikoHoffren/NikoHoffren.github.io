@@ -2,14 +2,28 @@
 
 /* Reset */
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, a{
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p{
+    margin: 0;
+}
+
+/*html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, a{
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 0;
     font: inherit;
     vertical-align: baseline;
-}
+}*/
 a{
     text-decoration: none;
 }
@@ -23,10 +37,10 @@ html{
 }
 
 body{
-    color:blanchedalmond;
+    color:rgb(255, 232, 197);
 }
 
-.buttonContainer{
+/*.buttonContainer{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -39,15 +53,29 @@ body{
     height:40px;
     width:190px;
     text-align: center;
-    font-size:25px;
+    font-size:20px;
     margin:6px;
-}   
+}  */
+.buttonContainer{
+    margin-inline: auto;
+    width: min(90%, 70,5rem);
+    position:sticky;
+    top:5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin:1px;
+} 
+
+
 
 #buttonHome{
     background-color:rgb(34, 34, 32); 
     color:mistyrose;
-    font-size: 35px;
-    
+    font-size: 32px;
+   
+    padding-left: 10px;
+    padding-right: 10px;
     
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -58,8 +86,9 @@ body{
 #buttonBio{
     background-color:rgb(34, 34, 32); 
     color:mistyrose;
-    font-size: 35px;
-    
+    font-size: 32px;
+    padding-left: 10px;
+    padding-right: 10px;
     
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
@@ -73,8 +102,9 @@ body{
 #buttonMusic{
     background-color:rgb(34, 34, 32); 
     color:mistyrose;
-    font-size: 35px;
-    
+    font-size: 32px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
 #buttonMusic:active{
@@ -87,8 +117,9 @@ body{
 #buttonVideos{
     background-color:rgb(34, 34, 32); 
     color:mistyrose;
-    font-size: 35px;
-    
+    font-size: 32px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
 #buttonVideos:active{
@@ -101,7 +132,7 @@ body{
 #buttonContact{
     background-color:rgb(34, 34, 32); 
     color:mistyrose;
-    font-size: 35px;
+    font-size: 32px;
     
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
@@ -140,7 +171,7 @@ body{
 
 #title{
     font-family: monospace, sans-serif;
-    font-size: 68px;
+    font-size: 63px;
     text-align: center;
     border: solid;
     width: auto;
@@ -156,7 +187,7 @@ body{
 
 #biographyTitle{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 40px;
+    font-size: 32px;
     text-align: center;
     border: solid; 
     background-color: rgb(14, 13, 13);
@@ -164,6 +195,9 @@ body{
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 10px;
+    animation: colorAnimation1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 #NHphoto{
@@ -173,7 +207,7 @@ body{
 
 #biography{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 22px;
+    font-size: 19px;
     text-align: center;
     border: solid; 
     background-color: rgb(43, 40, 40);
@@ -183,7 +217,7 @@ body{
 
 #musicTitle{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 40px;
+    font-size: 32px;
     text-align: center;
     border: solid; 
     background-color: rgb(14, 13, 13);
@@ -191,11 +225,14 @@ body{
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 10px;
+    animation: colorAnimation1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 #videosTitle{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 40px;
+    font-size: 32px;
     text-align: center;
     border: solid; 
     background-color: rgb(14, 13, 13);
@@ -203,6 +240,9 @@ body{
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 10px;
+    animation: colorAnimation1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 #WITCtext{
@@ -332,34 +372,44 @@ body{
     height:180px;
     width:320px;
     border:solid;
-    margin:20px;
+    margin:25px;
 }
 .WITCvideo:hover{
-    border:outset;
+    
+    box-shadow: 10px 10px 5px rgb(49, 48, 49);
+    
 }
 .TOEvideo:hover{
-    border:outset;
+    
+    box-shadow: 10px 10px 5px rgb(49, 48, 49);
 }
 .MCvideo:hover{
-    border:outset;
+    
+    box-shadow: 10px 10px 5px rgb(49, 48, 49);
 }
 .RDvideo:hover{
-    border:outset;
+    
+    box-shadow: 10px 10px 5px rgb(49, 48, 49);
 }
 .STvideo:hover{
-    border:outset;
+    
+    box-shadow: 10px 10px 5px rgb(49, 48, 49);
 }
 .Mysteryvideo:hover{
-    border:outset;
+    
+    box-shadow: 10px 10px 5px rgb(49, 48, 49);
 }
 .BMEvideo:hover{
-    border:outset;
+    
+    box-shadow: 10px 10px 5px rgb(49, 48, 49);
 }
 .Morceauvideo:hover{
-    border:outset;
+   
+    box-shadow: 10px 10px 5px rgb(49, 48, 49);
 }
 .SDvideo:hover{
-    border:outset;
+    
+    box-shadow: 10px 10px 5px rgb(49, 48, 49);
 }
 
 /*#WITCpromoVideo{
@@ -378,7 +428,7 @@ body{
     position: static;
     padding-left: 125px;
 }
-*/
+
 
 .iconContainer{
     display: flex;
@@ -397,33 +447,56 @@ body{
     font-size:9px;
     margin:1px;
 }
+*/
+.iconContainer{
+    margin-inline: auto;
+    width: min(90%, 70,5rem);
+    line-height:140px;
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+    font-size:9px;
+}
 
 .fa-youtube{
     color:rgb(255, 255, 255);
+    padding-left: 10px;
+    padding-right: 10px;
     
 }
 .fa-youtube:hover{
     color:rgb(167, 167, 167);
+  
 }
 
 .fa-twitter{
     color:rgb(255, 255, 255);
+    padding-left: 10px;
+    padding-right: 10px;
     
 }
 .fa-twitter:hover{
     color:rgb(167, 167, 167);
+    
 }
 
 .fa-facebook{
     color:rgb(255, 255, 255);
+    padding-left: 10px;
+    padding-right: 10px;
     
 }
 .fa-facebook:hover{
     color:rgb(167, 167, 167);
+   
 }
 
 .fa-instagram{
     color:rgb(255, 255, 255);
+    padding-left: 10px;
+    padding-right: 10px;
     
 }
 .fa-instagram:hover{
@@ -432,6 +505,8 @@ body{
 
 .fa-envelope{
     color:rgb(255, 255, 255);
+    padding-left: 10px;
+    padding-right: 10px;
     
 }
 .fa-envelope:hover{
@@ -440,6 +515,8 @@ body{
 
 .fa-soundcloud{
     color:rgb(255, 255, 255);
+    padding-left: 10px;
+    padding-right: 10px;
    
 }
 .fa-soundcloud:hover{
@@ -448,6 +525,8 @@ body{
 
 .fa-spotify{
     color: rgb(255, 255, 255);
+    padding-left: 10px;
+    padding-right: 10px;
     
 }
 .fa-spotify:hover{
