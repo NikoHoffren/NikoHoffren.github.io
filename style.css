@@ -178,8 +178,7 @@ p {
 }
 
 .music-col {
-    
-    flex-basis: 31%;
+    flex: content;
     background: #fff1f1;
     border-radius: 10px;
     margin-bottom: 5%;
