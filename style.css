@@ -118,7 +118,7 @@ nav .fa{
     }
 }
 
-/*------ Promo Video ------*/
+/*------ Promo Video ------
 
 .WITCpromo {
     position: relative;
@@ -136,6 +136,9 @@ nav .fa{
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+*/
+
 
 /*------ Biography ------*/
 
