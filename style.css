@@ -118,6 +118,25 @@ nav .fa{
     }
 }
 
+/*------ Promo Video ------*/
+
+.WITCpromo {
+    position: relative;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 100px;
+    padding-top: 10px;
+}
+
+#WITCpromoVideo {
+    width: 100%;
+    margin-left: 12%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 /*------ Biography ------*/
 
 .bio {
