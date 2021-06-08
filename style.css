@@ -284,6 +284,9 @@ h3 {
     .music-col {
         padding: 0;
     }
+    .music {
+        width: 100%;
+    }
 }
 
 /*------ Videos ------*/
