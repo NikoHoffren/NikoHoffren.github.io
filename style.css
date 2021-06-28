@@ -291,10 +291,10 @@ h3 {
         flex-direction: column;
     }
     .music-col {
-        padding: 5;
+        padding: 5px;
     }
     .music {
-        width: 80%;
+        width: 100%;
     }
 }
 
@@ -337,7 +337,7 @@ h3 {
         width: 100%;
     }
     .videos-col{ 
-        width: 95%;
+        width: 93%;
     }
 }
 
